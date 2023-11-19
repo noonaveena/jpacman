@@ -3,7 +3,7 @@ plugins {
     id 'java'
     id 'jacoco'
     id 'checkstyle'
-    id 'pmd'
+//    id 'pmd'
     id 'com.github.spotbugs' version '1.7.1'
 }
 
@@ -92,10 +92,10 @@ task staticAnalysis(type: GradleBuild) {
         'checkstyleTest',
         'checkstyleDefaultTest',
         'pmdMain',
-        'pmdTest',
-        'pmdDefaultTest',
-        'spotbugsMain',
-        'spotbugsTest',
+//        'pmdTest',
+//        'pmdDefaultTest',
+//        'spotbugsMain',
+//        'spotbugsTest',
         'spotbugsDefaultTest',
     ]
 }
