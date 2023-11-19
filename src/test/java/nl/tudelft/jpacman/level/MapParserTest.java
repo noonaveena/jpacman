@@ -43,10 +43,10 @@ public class MapParserTest {
         Mockito.verify(levelFactory, Mockito.times(1)).createGhost();
 
         /* Add other verifications that can be performed */
-        int number_of_walls = 26;
-        final int number_of_grounds= 10;
-        Mockito.verify(boardFactory, Mockito.times(number_of_walls)).createWall();
-        Mockito.verify(boardFactory, Mockito.times(number_of_grounds)).createGround();
+        final int numberOfWalls = 26;
+        final int numberOfGrounds= 10;
+        Mockito.verify(boardFactory, Mockito.times(numberOfWalls)).createWall();
+        Mockito.verify(boardFactory, Mockito.times(numberOfGrounds)).createGround();
     }
     /**
      * Test for the parseMap method (bad map).
