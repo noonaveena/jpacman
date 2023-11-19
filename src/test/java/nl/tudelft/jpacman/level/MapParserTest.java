@@ -44,7 +44,7 @@ public class MapParserTest {
 
         /* Add other verifications that can be performed */
         final int numberOfWalls = 26;
-        final int numberOfGrounds= 10;
+        final int numberOfGrounds = 10;
         Mockito.verify(boardFactory, Mockito.times(numberOfWalls)).createWall();
         Mockito.verify(boardFactory, Mockito.times(numberOfGrounds)).createGround();
     }
